@@ -13,7 +13,9 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     url='https://github.com/anderslanglands/st4',
     packages=['st4'],
-    install_requires=['PySerial'],
+    install_requires=['pyserial'],
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
